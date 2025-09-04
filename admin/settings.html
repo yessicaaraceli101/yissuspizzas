@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Settings – TableTime</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body data-page="admin-settings">
+  
+  <header class="topbar admin">
+    <div class="container row between align-center">
+      <a class="brand" href="dashboard.html">
+        <span>TableTime Admin</span>
+      </a>
+      <nav class="nav">
+        <a href="dashboard.html" class="">Dashboard</a>
+        <a href="orders.html" class="">Orders</a>
+        <a href="menu.html" class="">Menu</a>
+        <a href="settings.html" class="active">Settings</a>
+      </nav>
+      <div class="row gap">
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
+        <button id="adminLogout" class="btn danger">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <h2>Settings</h2>
+    <form id="settingsForm" class="stack">
+      <label>Delivery fee
+        <input type="number" name="delivery_fee" min="0" step="0.01" />
+      </label>
+      <label>Tax rate (%)
+        <input type="number" name="tax_rate" min="0" step="0.01" />
+      </label>
+      <button class="btn primary" type="submit">Save</button>
+    </form>
+  </main>
+  
+  <footer class="footer admin">
+    <div class="container row between align-center">
+      <p>TableTime Admin</p>
+      <div class="row gap sm">
+        <a href="../index.html">← Back to site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>
