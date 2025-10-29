@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact – TableTime</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/contact.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -55,13 +57,134 @@
       </div>
     </header>
 
-    <main class="container narrow">
-      <h2>Contact</h2>
-      <p>
-        Questions? Email
-        <a href="mailto:support@tabletime.example">support@tabletime.example</a
-        >.
+    <main class="container narrow contact" id="top">
+      <h1>Contact</h1>
+      <p class="lead">We’d love to hear your feedback on this prototype.</p>
+      <p class="notice">
+        This is a <strong>demo</strong>—please don’t submit real personal or
+        payment data.
       </p>
+
+      <section class="cards two">
+        <!-- Left: contact form (demo) -->
+        <div class="card">
+          <h2>Send a message (demo)</h2>
+          <p class="help">
+            This form is non-functional in the demo. Use the email on the right
+            or
+            <a
+              href="mailto:support@tabletime.example?subject=Feedback%20on%20TableTime%20demo"
+              >click here</a
+            >
+            to draft an email.
+          </p>
+
+          <form
+            onsubmit="alert('Demo only: this form does not submit. Please email support@tabletime.example.'); return false;"
+          >
+            <div class="grid-two">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" type="text" placeholder="Jane Doe" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="jane@example.com" />
+              </div>
+            </div>
+
+            <div class="grid-two">
+              <div>
+                <label for="topic">Topic</label>
+                <select id="topic">
+                  <option>General feedback</option>
+                  <option>Bug report</option>
+                  <option>Feature request</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="order">Order ID (optional)</label>
+                <input id="order" type="text" placeholder="TTABC123" />
+              </div>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Tell us what you think..."
+              ></textarea>
+            </div>
+
+            <button class="btn" type="submit">Send message</button>
+            <p class="help">
+              By using this demo, you agree your inputs are local to your
+              browser and not transmitted.
+            </p>
+          </form>
+        </div>
+
+        <!-- Right: direct contact + quick info -->
+        <aside class="card">
+          <h2>Direct contact</h2>
+          <div class="demo-banner">
+            <span aria-hidden="true">ℹ️</span>
+            <div>
+              <strong>Demo note:</strong> Email is the best way to reach us
+              about this prototype.
+            </div>
+          </div>
+
+          <ul class="info-list">
+            <li>
+              <span class="icon" aria-hidden="true">✉️</span
+              ><span
+                ><a href="mailto:support@tabletime.example"
+                  >support@tabletime.example</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">⏰</span
+              ><span>Hours: Mon–Fri, 9:00–17:00 (demo)</span>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">📍</span
+              ><span
+                >Address: Demo Street 123, Sample City (not a real
+                location)</span
+              >
+            </li>
+          </ul>
+
+          <h3>Common questions</h3>
+          <details>
+            <summary>Is this a real ordering service?</summary>
+            <p>
+              No—this is a demo prototype. Orders are stored only in your
+              browser.
+            </p>
+          </details>
+          <details>
+            <summary>Can I submit real card or personal data?</summary>
+            <p>
+              Please don’t. Payment and submission flows are simulated for
+              demonstration only.
+            </p>
+          </details>
+          <details>
+            <summary>How do I clear demo data?</summary>
+            <p>
+              Clear your browser’s site data/storage for this domain to remove
+              cart, orders, and settings.
+            </p>
+          </details>
+
+          <p class="help"><a href="#top">Back to top</a></p>
+        </aside>
+      </section>
     </main>
 
     <footer class="footer">

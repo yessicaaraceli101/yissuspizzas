@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About – TableTime</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/about.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -54,16 +56,134 @@
       </div>
     </header>
 
-    <main class="container narrow">
-      <h2>About TableTime</h2>
-      <p>
-        TableTime is a demo booking & delivery flow that treats every customer
-        as a guest. No signups, just good food fast.
+    <main class="container narrow about" id="top">
+      <h1>About TableTime</h1>
+      <p class="lead">
+        A lightweight demo of a restaurant discovery, booking, and guest
+        checkout flow.
       </p>
-      <p>
-        This build includes a catalogue, restaurant pages with booking & menu,
-        guest checkout, and a lightweight admin.
+      <p class="notice">
+        This is a <strong>demo</strong>. It is not a real service and must
+        <strong>not</strong> be used in real-life scenarios, for actual orders,
+        or with real personal/payment data.
       </p>
+
+      <section class="card">
+        <h2>What this demo includes</h2>
+        <div class="cards three">
+          <div class="card">
+            <h3>Customer flow</h3>
+            <ul class="checklist">
+              <li>Search & filter restaurants</li>
+              <li>Restaurant details + menu</li>
+              <li>Guest checkout (no signup)</li>
+              <li>Order confirmation screen</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Admin preview</h3>
+            <ul class="checklist">
+              <li>Dashboard & recent orders</li>
+              <li>Order status updates</li>
+              <li>Menu management (local save)</li>
+              <li>Basic tax & delivery settings</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>System & data</h3>
+            <ul class="checklist">
+              <li>JSON data source (24 restaurants)</li>
+              <li>Theme toggle (dark/light)</li>
+              <li>Mobile menu (hamburger)</li>
+              <li>Local-only storage (no server)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="cards two">
+        <div class="card">
+          <h2>How it works</h2>
+          <ol>
+            <li><strong>Browse:</strong> Use filters to find a spot.</li>
+            <li>
+              <strong>Add items:</strong> Pick dishes on the restaurant page.
+            </li>
+            <li>
+              <strong>Checkout as guest:</strong> Enter email/address and
+              simulate payment.
+            </li>
+            <li>
+              <strong>Admin view:</strong> Log in with any email + password
+              <code>admin123</code> to view mock orders.
+            </li>
+          </ol>
+        </div>
+        <div class="card">
+          <h2>Tech at a glance</h2>
+          <p>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">jQuery</span>
+            <span class="badge">LocalStorage</span>
+            <span class="badge">JSON</span>
+          </p>
+          <p>
+            No backend required. For local AJAX, run a simple server (e.g.
+            <code>python -m http.server</code>).
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Demo timeline</h2>
+        <div class="timeline">
+          <div class="t">
+            <strong>Catalogue & detail pages</strong> — cards, filters, and menu
+            display
+          </div>
+          <div class="t">
+            <strong>Guest checkout</strong> — mock payment and confirmation
+          </div>
+          <div class="t">
+            <strong>Admin area</strong> — dashboard, orders, menu editor,
+            settings
+          </div>
+          <div class="t">
+            <strong>Polish</strong> — mobile nav toggle, dark mode,
+            page-specific legal docs
+          </div>
+        </div>
+      </section>
+
+      <section class="cards two">
+        <div class="card">
+          <h2>Limitations</h2>
+          <ul class="checklist">
+            <li>No real payments or fulfillment</li>
+            <li>Sample data; not real restaurants</li>
+            <li>Orders live only in your browser</li>
+            <li>Not reviewed for production security</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Credits</h2>
+          <p>
+            Icons, images, and libraries may be from public CDNs and placeholder
+            services for prototyping only. Respect their respective licenses and
+            terms.
+          </p>
+          <p>
+            Questions?
+            <a href="mailto:support@tabletime.example"
+              >support@tabletime.example</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <p class="small"><a href="#top">Back to top</a></p>
     </main>
 
     <footer class="footer">

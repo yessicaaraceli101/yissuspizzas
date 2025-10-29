@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FAQ – TableTime</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/faq.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -55,16 +57,142 @@
       </div>
     </header>
 
-    <main class="container narrow">
-      <h2>Frequently Asked Questions</h2>
-      <details>
+    <main class="container narrow faq" id="top">
+      <h1>Frequently Asked Questions</h1>
+      <p class="lead">Quick answers about how this prototype behaves.</p>
+      <p class="notice">
+        This is a <strong>demo</strong>. No real orders, payments, or accounts
+        are created.
+      </p>
+
+      <details open>
         <summary>Do I need an account?</summary>
-        <p>Nope. Checkout as a guest.</p>
+        <div>
+          <p>
+            No. This demo uses a guest checkout flow—no sign-in or sign-up
+            required.
+          </p>
+        </div>
       </details>
+
       <details>
-        <summary>How is payment handled?</summary>
-        <p>This demo simulates payment. Do not use real card data.</p>
+        <summary>Is payment real?</summary>
+        <div>
+          <p>
+            No. Payment is simulated. <strong>Do not</strong> enter real card or
+            banking information.
+          </p>
+        </div>
       </details>
+
+      <details>
+        <summary>Where are my orders stored?</summary>
+        <div>
+          <p>
+            Orders, cart items, and simple settings are stored locally in your
+            browser’s <code>localStorage</code>. They never leave your device in
+            this demo.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I clear my demo data?</summary>
+        <div>
+          <p>
+            Clear your browser’s site data/storage for this domain. That removes
+            demo orders, cart contents, and preferences.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Are these real restaurants and menus?</summary>
+        <div>
+          <p>
+            No. Names, images, menus, ratings, and cities are sample/placeholder
+            content used for demonstration only.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          Why can’t I see restaurants when opening files directly?
+        </summary>
+        <div>
+          <p>
+            Some browsers block AJAX on <code>file://</code>. Run a tiny local
+            server (e.g., <code>python -m http.server</code>) and open
+            <code>http://localhost:8000/</code> so the demo can load its JSON
+            data.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What does the admin area do?</summary>
+        <div>
+          <p>
+            It shows mock orders and simple controls. Log in with any email and
+            password <code>admin123</code>. Changes are stored locally and have
+            no real-world effect.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I change delivery fee or tax?</summary>
+        <div>
+          <p>
+            Yes—use Admin → Settings to set demo delivery fees and tax rate.
+            Totals will recalculate in checkout.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I edit the menu?</summary>
+        <div>
+          <p>
+            Yes—use Admin → Menu to add/remove items for a restaurant. Edits are
+            saved to your browser storage only.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does this demo work on mobile?</summary>
+        <div>
+          <p>
+            Yes—there’s a responsive layout with a mobile hamburger menu and a
+            dark/light mode toggle.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Is my personal data collected?</summary>
+        <div>
+          <p>
+            No server collects data in this demo. Any values you type may be
+            stored locally in your browser to make the prototype work. See the
+            <a href="privacy.html">Privacy Policy</a> for details.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Can I use this in production?</summary>
+        <div>
+          <p>
+            No. This is prototype code. It is not security-hardened and is not
+            intended for real transactions or live users.
+          </p>
+        </div>
+      </details>
+
+      <p class="small"><a href="#top">Back to top</a></p>
     </main>
 
     <footer class="footer">

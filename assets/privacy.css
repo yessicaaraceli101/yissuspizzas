@@ -1,0 +1,77 @@
+/* assets/privacy.css — demo-only styles for Privacy page */
+
+.privacy {
+  line-height: 1.65;
+}
+
+.privacy h1 {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  margin: 0 0 0.75rem 0;
+}
+
+.privacy .last-updated {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.privacy .notice {
+  border: 1px dashed var(--border);
+  background: var(--surface);
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  margin: 1rem 0 1.25rem;
+  font-weight: 600;
+}
+
+.privacy .toc {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  margin: 1rem 0 1.5rem;
+}
+
+.privacy .toc h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.privacy .toc ol {
+  margin: 0.25rem 0 0 1rem;
+  padding: 0;
+}
+
+.privacy section {
+  margin: 1.25rem 0 1.25rem;
+}
+
+.privacy h2 {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  margin: 1.25rem 0 0.4rem;
+}
+
+.privacy a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacy .small {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* Print: focus on content */
+@media print {
+  .topbar,
+  .footer,
+  #navToggle {
+    display: none !important;
+  }
+  .container {
+    max-width: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
