@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About – TableTime</title>
+    <title>Nosotros – Yisuss Pizza</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/about.css" />
 
@@ -14,88 +14,93 @@
     ></script>
   </head>
   <body data-page="about">
-    <header class="topbar">
-      <div class="container row between align-center">
-        <a class="brand" href="index.html">
-          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2c3.866 0 7 3.134 7 7 0 3.087-1.99 5.703-4.737 6.613L14 22l-2-.5 1.086-5.267C9.398 15.978 7 13.237 7 9.999 7 5.925 9.925 3 14 3c-1.06-0.627-2.29-1-3.62-1-4.418 0-8 3.582-8 8 0 3.872 2.754 7.096 6.393 7.852L8 22l-2-.5 .73-3.527C3.43 16.953 1 13.794 1 10 1 5.029 5.029 1 10 1s9 4.029 9 9-4.029 9-9 9-1.5-.08-2.2-.23"
-              fill="currentColor"
-            />
+  <header class="topbar">
+  <div class="container row between align-center">
+    <a class="brand" href="index.html">
+      <img
+        src="assets/img/IMG-20260526-WA0046.jpg"
+        alt="Yissus Pizza"
+        width="40"
+        height="40"
+        style="border-radius: 50%; object-fit: cover;"
+      />
+      <span>Yisuss Pizza</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="">Inicio</a>
+      <a href="about.html" class="active">Nosotros</a>
+      <a href="contact.html" class="">Contacto</a>
+      <a href="faq.html" class="">Preguntas frecuentes</a>
+    </nav>
+    <div class="nav-right">
+      <div class="row gap">
+        <button
+          id="themeToggle"
+          class="btn ghost"
+          aria-label="Cambiar tema"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
-          <span>TableTime</span>
-        </a>
-        <nav class="nav">
-          <a href="index.html" class="">Home</a>
-          <a href="about.html" class="active">About</a>
-          <a href="contact.html" class="">Contact</a>
-          <a href="faq.html" class="">FAQ</a>
-        </nav>
-        <div class="nav-right">
-          <div class="row gap">
-            <a class="admin-link" href="admin/login.html" title="Admin"
-              >Admin</a
-            >
-            <button
-              id="themeToggle"
-              class="btn ghost"
-              aria-label="Toggle theme"
-            >
-              🌓
-            </button>
-            <a class="btn" href="checkout.html">Cart</a>
-          </div>
-          <button
-            id="navToggle"
-            class="btn ghost hamburger"
-            aria-label="Toggle menu"
-          >
-            ☰
-          </button>
-        </div>
+        </button>
+        <a class="btn" href="checkout.html">Carrito</a>
       </div>
-    </header>
+      <button
+        id="navToggle"
+        class="btn ghost hamburger"
+        aria-label="Abrir menú"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
 
     <main class="container narrow about" id="top">
-      <h1>About TableTime</h1>
+      <h1>Sobre Yisuss Pizza</h1>
       <p class="lead">
-        A lightweight demo of a restaurant discovery, booking, and guest
-        checkout flow.
-      </p>
-      <p class="notice">
-        This is a <strong>demo</strong>. It is not a real service and must
-        <strong>not</strong> be used in real-life scenarios, for actual orders,
-        or with real personal/payment data.
+        Pizzas artesanales hechas al horno, con ingredientes frescos y el
+        sabor de siempre, directo a tu mesa en Sapucaí.
       </p>
 
       <section class="card">
-        <h2>What this demo includes</h2>
+        <h2>Quiénes somos</h2>
+        <p>
+          Somos una pizzería familiar ubicada en Sapucaí, dedicada a preparar
+          pizzas artesanales con masa hecha a diario e ingredientes
+          seleccionados. Nos apasiona la buena comida y el trato cercano con
+          cada cliente.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Lo que ofrecemos</h2>
         <div class="cards three">
           <div class="card">
-            <h3>Customer flow</h3>
+            <h3>Nuestras pizzas</h3>
             <ul class="checklist">
-              <li>Search & filter restaurants</li>
-              <li>Restaurant details + menu</li>
-              <li>Guest checkout (no signup)</li>
-              <li>Order confirmation screen</li>
+              <li>Clásicas: muzzarella, napolitana, jamón y morrón</li>
+              <li>Especiales de la casa</li>
+              <li>Opciones vegetarianas</li>
+              <li>Masa tradicional y masa fina</li>
             </ul>
           </div>
           <div class="card">
-            <h3>Admin preview</h3>
+            <h3>Cómo pedir</h3>
             <ul class="checklist">
-              <li>Dashboard & recent orders</li>
-              <li>Order status updates</li>
-              <li>Menu management (local save)</li>
-              <li>Basic tax & delivery settings</li>
+              <li>Pedidos para retirar en el local</li>
+              <li>Entrega a domicilio en Sapucaí</li>
+              <li>Pedidos por WhatsApp o teléfono</li>
+              <li>Pago en efectivo o transferencia</li>
             </ul>
           </div>
           <div class="card">
-            <h3>System & data</h3>
+            <h3>Horarios y ubicación</h3>
             <ul class="checklist">
-              <li>JSON data source (24 restaurants)</li>
-              <li>Theme toggle (dark/light)</li>
-              <li>Mobile menu (hamburger)</li>
-              <li>Local-only storage (no server)</li>
+              <li>Abierto todos los días</li>
+              <li>Horario: 18:00 a 23:00 hs</li>
+              <li>Sapucaí, Departamento de Cordillera</li>
+              <li>Estacionamiento disponible</li>
             </ul>
           </div>
         </div>
@@ -103,95 +108,77 @@
 
       <section class="cards two">
         <div class="card">
-          <h2>How it works</h2>
+          <h2>Cómo funciona</h2>
           <ol>
-            <li><strong>Browse:</strong> Use filters to find a spot.</li>
+            <li><strong>Elegí:</strong> Mirá nuestro menú de pizzas y promociones.</li>
             <li>
-              <strong>Add items:</strong> Pick dishes on the restaurant page.
+              <strong>Armá tu pedido:</strong> Sumá las pizzas y bebidas que quieras.
             </li>
             <li>
-              <strong>Checkout as guest:</strong> Enter email/address and
-              simulate payment.
+              <strong>Confirmá:</strong> Dejanos tu dirección o avisanos que pasás a retirar.
             </li>
             <li>
-              <strong>Admin view:</strong> Log in with any email + password
-              <code>admin123</code> to view mock orders.
+              <strong>Disfrutá:</strong> Te avisamos cuando tu pedido está listo o en camino.
             </li>
           </ol>
         </div>
         <div class="card">
-          <h2>Tech at a glance</h2>
+          <h2>Nuestra historia</h2>
           <p>
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">jQuery</span>
-            <span class="badge">LocalStorage</span>
-            <span class="badge">JSON</span>
-          </p>
-          <p>
-            No backend required. For local AJAX, run a simple server (e.g.
-            <code>python -m http.server</code>).
+            Empezamos como un pequeño emprendimiento familiar con el sueño de
+            llevar pizzas de calidad a los vecinos de Sapucaí. Con el tiempo,
+            fuimos creciendo gracias a la confianza de nuestros clientes y hoy
+            seguimos con la misma receta de siempre: ingredientes frescos,
+            buena masa y mucho cariño en cada pizza.
           </p>
         </div>
       </section>
 
       <section class="card">
-        <h2>Demo timeline</h2>
+        <h2>Nuestra trayectoria</h2>
         <div class="timeline">
           <div class="t">
-            <strong>Catalogue & detail pages</strong> — cards, filters, and menu
-            display
+            <strong>Inicio</strong> — abrimos nuestras puertas en Sapucaí
           </div>
           <div class="t">
-            <strong>Guest checkout</strong> — mock payment and confirmation
+            <strong>Crecimiento</strong> — sumamos delivery y nuevas variedades de pizza
           </div>
           <div class="t">
-            <strong>Admin area</strong> — dashboard, orders, menu editor,
-            settings
-          </div>
-          <div class="t">
-            <strong>Polish</strong> — mobile nav toggle, dark mode,
-            page-specific legal docs
+            <strong>Hoy</strong> — seguimos atendiendo con la misma dedicación de siempre
           </div>
         </div>
       </section>
 
       <section class="cards two">
         <div class="card">
-          <h2>Limitations</h2>
+          <h2>Por qué elegirnos</h2>
           <ul class="checklist">
-            <li>No real payments or fulfillment</li>
-            <li>Sample data; not real restaurants</li>
-            <li>Orders live only in your browser</li>
-            <li>Not reviewed for production security</li>
+            <li>Masa artesanal hecha todos los días</li>
+            <li>Ingredientes frescos y de calidad</li>
+            <li>Atención cercana y familiar</li>
+            <li>Precios accesibles para toda la familia</li>
           </ul>
         </div>
         <div class="card">
-          <h2>Credits</h2>
+          <h2>Contacto</h2>
           <p>
-            Icons, images, and libraries may be from public CDNs and placeholder
-            services for prototyping only. Respect their respective licenses and
-            terms.
+            ¿Tenés dudas o querés hacer un pedido especial? Escribinos.
           </p>
           <p>
-            Questions?
-            <a href="mailto:support@tabletime.example"
-              >support@tabletime.example</a
+            <a href="mailto:contacto@yisusspizza.example"
+              >contacto@yisusspizza.example</a
             >
           </p>
         </div>
       </section>
 
-      <p class="small"><a href="#top">Back to top</a></p>
+      <p class="small"><a href="#top">Volver arriba</a></p>
     </main>
 
     <footer class="footer">
-      <div class="container row between align-center">
-        <p>© 2025 TableTime. All rights reserved.</p>
-        <div class="row gap sm">
-          <a href="terms.html">Terms</a>
-          <a href="privacy.html">Privacy</a>
+    <div class="container row align-center" style="justify-content: center;">
+    <p>© 2025 Yisuss Pizza.</p>
+    </div>
         </div>
       </div>
     </footer>

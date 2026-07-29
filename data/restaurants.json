@@ -1,650 +1,182 @@
 [
   {
     "id": 1,
-    "name": "Japanese Place 1",
-    "cuisine": "Japanese",
+    "name": "Pizza Margherita",
+    "cuisine": "Clásicas",
     "city": "Portland",
     "rating": 4.7,
-    "price": "$$$",
-    "image": "https://picsum.photos/seed/r1/800/500",
-    "description": "Bright, airy, and perfect for quick lunches.",
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_Margherita_(14703152728).jpg?width=600",
+    "description": "La clásica de siempre: salsa de tomate casera, mozzarella fresca y hojas de albahaca recién cortadas.",
     "menu": [
-      {
-        "id": "r1i1",
-        "name": "Salmon Nigiri",
-        "price": 8.0
-      },
-      {
-        "id": "r1i2",
-        "name": "Tonkotsu Ramen",
-        "price": 12.5
-      },
-      {
-        "id": "r1i3",
-        "name": "Gyoza",
-        "price": 6.0
-      }
+      { "id": "p1i1", "name": "Margherita Individual", "price": 38000 },
+      { "id": "p1i2", "name": "Margherita Familiar", "price": 78000 },
+      { "id": "p1i3", "name": "Palitos de Ajo", "price": 18000 }
     ]
   },
   {
     "id": 2,
-    "name": "Italian Place 2",
-    "cuisine": "Italian",
+    "name": "Pizza Pepperoni",
+    "cuisine": "Con carne",
     "city": "Vancouver",
-    "rating": 4.3,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r2/800/500",
-    "description": "Modern dining room with a focus on local ingredients.",
+    "rating": 4.6,
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pepperoni_pizza.jpg?width=600",
+    "description": "Abundante pepperoni crocante sobre una capa generosa de mozzarella derretida.",
     "menu": [
-      {
-        "id": "r2i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r2i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r2i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
+      { "id": "p2i1", "name": "Pepperoni Individual", "price": 42000 },
+      { "id": "p2i2", "name": "Pepperoni Familiar", "price": 85000 },
+      { "id": "p2i3", "name": "Gaseosa 500ml", "price": 12000 }
     ]
   },
   {
     "id": 3,
-    "name": "Mediterranean Place 3",
-    "cuisine": "Mediterranean",
+    "name": "Pizza Hawaiana",
+    "cuisine": "Especiales",
     "city": "San Francisco",
-    "rating": 3.9,
-    "price": "$$$",
-    "image": "https://picsum.photos/seed/r3/800/500",
-    "description": "Bright, airy, and perfect for quick lunches.",
+    "rating": 4.1,
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hawaiian_and_pepperoni_pizza_in_Toronto_(2024-04-07).jpg?width=600",
+    "description": "La combinación que divide opiniones: jamón dulce y ananá jugoso sobre mozzarella.",
     "menu": [
-      {
-        "id": "r3i1",
-        "name": "Falafel Plate",
-        "price": 11.0
-      },
-      {
-        "id": "r3i2",
-        "name": "Chicken Shawarma",
-        "price": 12.0
-      },
-      {
-        "id": "r3i3",
-        "name": "Hummus",
-        "price": 5.0
-      }
+      { "id": "p3i1", "name": "Hawaiana Individual", "price": 40000 },
+      { "id": "p3i2", "name": "Hawaiana Familiar", "price": 82000 },
+      { "id": "p3i3", "name": "Gaseosa 500ml", "price": 12000 }
     ]
   },
   {
     "id": 4,
-    "name": "Japanese Place 4",
-    "cuisine": "Japanese",
-    "city": "San Francisco",
-    "rating": 4.4,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r4/800/500",
-    "description": "Cozy neighborhood spot with seasonal plates.",
+    "name": "Pizza Cuatro Quesos",
+    "cuisine": "Especiales",
+    "city": "Seattle",
+    "rating": 4.8,
+    "price": "Gs Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_quattro_formaggi_at_restaurant,_Chalk_Farm_Road,_London.jpg?width=600",
+    "description": "Mozzarella, provolone, parmesano y gorgonzola en perfecto equilibrio de sabores.",
     "menu": [
-      {
-        "id": "r4i1",
-        "name": "Salmon Nigiri",
-        "price": 8.0
-      },
-      {
-        "id": "r4i2",
-        "name": "Tonkotsu Ramen",
-        "price": 12.5
-      },
-      {
-        "id": "r4i3",
-        "name": "Gyoza",
-        "price": 6.0
-      }
+      { "id": "p4i1", "name": "Cuatro Quesos Individual", "price": 45000 },
+      { "id": "p4i2", "name": "Cuatro Quesos Familiar", "price": 92000 },
+      { "id": "p4i3", "name": "Borde Relleno", "price": 15000 }
     ]
   },
   {
     "id": 5,
-    "name": "Italian Place 5",
-    "cuisine": "Italian",
-    "city": "Portland",
-    "rating": 3.9,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r5/800/500",
-    "description": "Cozy neighborhood spot with seasonal plates.",
+    "name": "Pizza Napolitana",
+    "cuisine": "Clásicas",
+    "city": "San Francisco",
+    "rating": 4.3,
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza.jpg?width=600",
+    "description": "Anchoas, aceitunas negras y orégano fresco sobre una base de tomate bien perfumada.",
     "menu": [
-      {
-        "id": "r5i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r5i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r5i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
+      { "id": "p5i1", "name": "Napolitana Individual", "price": 41000 },
+      { "id": "p5i2", "name": "Napolitana Familiar", "price": 84000 },
+      { "id": "p5i3", "name": "Ensalada Mixta", "price": 20000 }
     ]
   },
   {
     "id": 6,
-    "name": "Mexican Place 6",
-    "cuisine": "Mexican",
-    "city": "Seattle",
-    "rating": 4.7,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r6/800/500",
-    "description": "Fast-casual favorites made fresh to order.",
+    "name": "Pizza Vegetariana",
+    "cuisine": "Vegetarianas",
+    "city": "Portland",
+    "rating": 4.4,
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Home_style_vegetarian_pizza.jpg?width=600",
+    "description": "Pimientos, champiñones, cebolla morada, tomate cherry y aceitunas sobre mozzarella.",
     "menu": [
-      {
-        "id": "r6i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r6i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r6i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
+      { "id": "p6i1", "name": "Vegetariana Individual", "price": 39000 },
+      { "id": "p6i2", "name": "Vegetariana Familiar", "price": 80000 },
+      { "id": "p6i3", "name": "Agua Mineral", "price": 8000 }
     ]
   },
   {
     "id": 7,
-    "name": "Japanese Place 7",
-    "cuisine": "Japanese",
-    "city": "San Francisco",
-    "rating": 4.4,
-    "price": "$$$",
-    "image": "https://picsum.photos/seed/r7/800/500",
-    "description": "Fast-casual favorites made fresh to order.",
+    "name": "Pizza BBQ Pollo",
+    "cuisine": "Con carne",
+    "city": "Seattle",
+    "rating": 4.5,
+    "price": "Gs Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Domino's_Chicken_Pizza.jpg?width=600",
+    "description": "Pollo grillado, salsa barbacoa ahumada, cebolla morada y un toque de cilantro.",
     "menu": [
-      {
-        "id": "r7i1",
-        "name": "Salmon Nigiri",
-        "price": 8.0
-      },
-      {
-        "id": "r7i2",
-        "name": "Tonkotsu Ramen",
-        "price": 12.5
-      },
-      {
-        "id": "r7i3",
-        "name": "Gyoza",
-        "price": 6.0
-      }
+      { "id": "p7i1", "name": "BBQ Pollo Individual", "price": 44000 },
+      { "id": "p7i2", "name": "BBQ Pollo Familiar", "price": 90000 },
+      { "id": "p7i3", "name": "Gaseosa 500ml", "price": 12000 }
     ]
   },
   {
     "id": 8,
-    "name": "Mediterranean Place 8",
-    "cuisine": "Mediterranean",
-    "city": "Seattle",
-    "rating": 4.3,
-    "price": "$$$",
-    "image": "https://picsum.photos/seed/r8/800/500",
-    "description": "Fast-casual favorites made fresh to order.",
+    "name": "Pizza Prosciutto y Rúcula",
+    "cuisine": "Con carne",
+    "city": "Vancouver",
+    "rating": 4.6,
+    "price": "Gs Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_(1).jpg?width=600",
+    "description": "Jamón crudo curado, rúcula fresca y virutas de parmesano sobre masa fina y crocante.",
     "menu": [
-      {
-        "id": "r8i1",
-        "name": "Falafel Plate",
-        "price": 11.0
-      },
-      {
-        "id": "r8i2",
-        "name": "Chicken Shawarma",
-        "price": 12.0
-      },
-      {
-        "id": "r8i3",
-        "name": "Hummus",
-        "price": 5.0
-      }
+      { "id": "p8i1", "name": "Prosciutto Individual", "price": 47000 },
+      { "id": "p8i2", "name": "Prosciutto Familiar", "price": 95000 },
+      { "id": "p8i3", "name": "Copa de Vino", "price": 25000 }
     ]
   },
   {
     "id": 9,
-    "name": "Mexican Place 9",
-    "cuisine": "Mexican",
-    "city": "Seattle",
-    "rating": 4.1,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r9/800/500",
-    "description": "Bright, airy, and perfect for quick lunches.",
+    "name": "Pizza Diávola",
+    "cuisine": "Con carne",
+    "city": "San Francisco",
+    "rating": 4.2,
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_Diavola_at_Alby's_Pizza.jpg?width=600",
+    "description": "Salame picante, ají molido y mozzarella: ideal para los que buscan un toque picante.",
     "menu": [
-      {
-        "id": "r9i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r9i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r9i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
+      { "id": "p9i1", "name": "Diávola Individual", "price": 42000 },
+      { "id": "p9i2", "name": "Diávola Familiar", "price": 86000 },
+      { "id": "p9i3", "name": "Gaseosa 500ml", "price": 12000 }
     ]
   },
   {
     "id": 10,
-    "name": "Thai Place 10",
-    "cuisine": "Thai",
-    "city": "Seattle",
-    "rating": 4.7,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r10/800/500",
-    "description": "Modern dining room with a focus on local ingredients.",
+    "name": "Pizza Capricciosa",
+    "cuisine": "Especiales",
+    "city": "Portland",
+    "rating": 4.4,
+    "price": "Gs Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_capricciosa.jpg?width=600",
+    "description": "Jamón, champiñones, alcachofas y aceitunas: un poco de todo en cada porción.",
     "menu": [
-      {
-        "id": "r10i1",
-        "name": "Pad Thai",
-        "price": 11.5
-      },
-      {
-        "id": "r10i2",
-        "name": "Green Curry",
-        "price": 12.0
-      },
-      {
-        "id": "r10i3",
-        "name": "Mango Sticky Rice",
-        "price": 6.0
-      }
+      { "id": "p10i1", "name": "Capricciosa Individual", "price": 43000 },
+      { "id": "p10i2", "name": "Capricciosa Familiar", "price": 88000 },
+      { "id": "p10i3", "name": "Palitos de Ajo", "price": 18000 }
     ]
   },
   {
     "id": 11,
-    "name": "Mexican Place 11",
-    "cuisine": "Mexican",
+    "name": "Calzone Clásico",
+    "cuisine": "Especiales",
     "city": "Seattle",
-    "rating": 4.7,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r11/800/500",
-    "description": "Bright, airy, and perfect for quick lunches.",
+    "rating": 4.5,
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_Calzone.jpg?width=600",
+    "description": "Masa doblada y horneada, rellena de jamón, mozzarella y ricota, servida con salsa aparte.",
     "menu": [
-      {
-        "id": "r11i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r11i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r11i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
+      { "id": "p11i1", "name": "Calzone Individual", "price": 40000 },
+      { "id": "p11i2", "name": "Calzone Doble", "price": 72000 },
+      { "id": "p11i3", "name": "Salsa Extra", "price": 8000 }
     ]
   },
   {
     "id": 12,
-    "name": "Italian Place 12",
-    "cuisine": "Italian",
-    "city": "San Francisco",
-    "rating": 3.9,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r12/800/500",
-    "description": "Family-run kitchen serving comfort classics.",
-    "menu": [
-      {
-        "id": "r12i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r12i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r12i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "name": "Mediterranean Place 13",
-    "cuisine": "Mediterranean",
+    "name": "Pizza Marinera",
+    "cuisine": "Vegetarianas",
     "city": "Vancouver",
-    "rating": 4.4,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r13/800/500",
-    "description": "Fast-casual favorites made fresh to order.",
-    "menu": [
-      {
-        "id": "r13i1",
-        "name": "Falafel Plate",
-        "price": 11.0
-      },
-      {
-        "id": "r13i2",
-        "name": "Chicken Shawarma",
-        "price": 12.0
-      },
-      {
-        "id": "r13i3",
-        "name": "Hummus",
-        "price": 5.0
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "name": "Mexican Place 14",
-    "cuisine": "Mexican",
-    "city": "Seattle",
-    "rating": 4.3,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r14/800/500",
-    "description": "Modern dining room with a focus on local ingredients.",
-    "menu": [
-      {
-        "id": "r14i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r14i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r14i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "name": "Indian Place 15",
-    "cuisine": "Indian",
-    "city": "Seattle",
-    "rating": 4.2,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r15/800/500",
-    "description": "Family-run kitchen serving comfort classics.",
-    "menu": [
-      {
-        "id": "r15i1",
-        "name": "Butter Chicken",
-        "price": 14.5
-      },
-      {
-        "id": "r15i2",
-        "name": "Chana Masala",
-        "price": 10.0
-      },
-      {
-        "id": "r15i3",
-        "name": "Garlic Naan",
-        "price": 3.5
-      }
-    ]
-  },
-  {
-    "id": 16,
-    "name": "Italian Place 16",
-    "cuisine": "Italian",
-    "city": "Portland",
-    "rating": 4.2,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r16/800/500",
-    "description": "Family-run kitchen serving comfort classics.",
-    "menu": [
-      {
-        "id": "r16i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r16i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r16i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
-    ]
-  },
-  {
-    "id": 17,
-    "name": "Thai Place 17",
-    "cuisine": "Thai",
-    "city": "San Francisco",
-    "rating": 4.5,
-    "price": "$$$",
-    "image": "https://picsum.photos/seed/r17/800/500",
-    "description": "Modern dining room with a focus on local ingredients.",
-    "menu": [
-      {
-        "id": "r17i1",
-        "name": "Pad Thai",
-        "price": 11.5
-      },
-      {
-        "id": "r17i2",
-        "name": "Green Curry",
-        "price": 12.0
-      },
-      {
-        "id": "r17i3",
-        "name": "Mango Sticky Rice",
-        "price": 6.0
-      }
-    ]
-  },
-  {
-    "id": 18,
-    "name": "Japanese Place 18",
-    "cuisine": "Japanese",
-    "city": "Seattle",
-    "rating": 4.5,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r18/800/500",
-    "description": "Fast-casual favorites made fresh to order.",
-    "menu": [
-      {
-        "id": "r18i1",
-        "name": "Salmon Nigiri",
-        "price": 8.0
-      },
-      {
-        "id": "r18i2",
-        "name": "Tonkotsu Ramen",
-        "price": 12.5
-      },
-      {
-        "id": "r18i3",
-        "name": "Gyoza",
-        "price": 6.0
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "name": "Italian Place 19",
-    "cuisine": "Italian",
-    "city": "Portland",
-    "rating": 4.2,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r19/800/500",
-    "description": "Bright, airy, and perfect for quick lunches.",
-    "menu": [
-      {
-        "id": "r19i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r19i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r19i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "name": "Italian Place 20",
-    "cuisine": "Italian",
-    "city": "Seattle",
-    "rating": 3.9,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r20/800/500",
-    "description": "Fast-casual favorites made fresh to order.",
-    "menu": [
-      {
-        "id": "r20i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r20i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r20i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "name": "Mexican Place 21",
-    "cuisine": "Mexican",
-    "city": "Vancouver",
-    "rating": 4.5,
-    "price": "$$$",
-    "image": "https://picsum.photos/seed/r21/800/500",
-    "description": "Bright, airy, and perfect for quick lunches.",
-    "menu": [
-      {
-        "id": "r21i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r21i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r21i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
-    ]
-  },
-  {
-    "id": 22,
-    "name": "Italian Place 22",
-    "cuisine": "Italian",
-    "city": "Seattle",
     "rating": 4.0,
-    "price": "$",
-    "image": "https://picsum.photos/seed/r22/800/500",
-    "description": "Romantic nook known for generous portions.",
+    "price": "Gs",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pizza_(1).jpg?width=600",
+    "description": "La más simple y sabrosa: tomate, ajo, orégano y un chorrito de aceite de oliva, sin queso.",
     "menu": [
-      {
-        "id": "r22i1",
-        "name": "Margherita Pizza",
-        "price": 13.0
-      },
-      {
-        "id": "r22i2",
-        "name": "Pasta Alfredo",
-        "price": 14.5
-      },
-      {
-        "id": "r22i3",
-        "name": "Tiramisu",
-        "price": 6.5
-      }
-    ]
-  },
-  {
-    "id": 23,
-    "name": "Mexican Place 23",
-    "cuisine": "Mexican",
-    "city": "Vancouver",
-    "rating": 4.2,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r23/800/500",
-    "description": "Romantic nook known for generous portions.",
-    "menu": [
-      {
-        "id": "r23i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r23i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r23i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "name": "Mexican Place 24",
-    "cuisine": "Mexican",
-    "city": "San Francisco",
-    "rating": 4.2,
-    "price": "$$",
-    "image": "https://picsum.photos/seed/r24/800/500",
-    "description": "Cozy neighborhood spot with seasonal plates.",
-    "menu": [
-      {
-        "id": "r24i1",
-        "name": "Chicken Tacos",
-        "price": 9.0
-      },
-      {
-        "id": "r24i2",
-        "name": "Carne Asada",
-        "price": 13.5
-      },
-      {
-        "id": "r24i3",
-        "name": "Guacamole",
-        "price": 5.0
-      }
+      { "id": "p12i1", "name": "Marinera Individual", "price": 32000 },
+      { "id": "p12i2", "name": "Marinera Familiar", "price": 65000 },
+      { "id": "p12i3", "name": "Agua Mineral", "price": 8000 }
     ]
   }
 ]

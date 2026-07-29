@@ -1,72 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Restaurant – TableTime</title>
+    <title>Restaurante – Yisuss Pizza</title>
     <link rel="stylesheet" href="assets/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+
+    <!-- ========================================================== -->
+    <!-- FIREBASE SDK                                               -->
+    <!-- ========================================================== -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
   </head>
   <body data-page="restaurant">
     <header class="topbar">
       <div class="container row between align-center">
         <a class="brand" href="index.html">
-          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2c3.866 0 7 3.134 7 7 0 3.087-1.99 5.703-4.737 6.613L14 22l-2-.5 1.086-5.267C9.398 15.978 7 13.237 7 9.999 7 5.925 9.925 3 14 3c-1.06-0.627-2.29-1-3.62-1-4.418 0-8 3.582-8 8 0 3.872 2.754 7.096 6.393 7.852L8 22l-2-.5 .73-3.527C3.43 16.953 1 13.794 1 10 1 5.029 5.029 1 10 1s9 4.029 9 9-4.029 9-9 9-1.5-.08-2.2-.23"
-              fill="currentColor"
-            />
-          </svg>
-          <span>TableTime</span>
+          <img
+            src="assets/img/IMG-20260526-WA0046.jpg"
+            alt="Yisuss Pizza"
+            width="40"
+            height="40"
+            style="border-radius: 50%; object-fit: cover;"
+          />
+          <span>Yisuss Pizza</span>
         </a>
 
         <nav class="nav">
-          <a href="index.html" class="">Home</a>
-          <a href="about.html" class="">About</a>
-          <a href="contact.html" class="">Contact</a>
-          <a href="faq.html" class="">FAQ</a>
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Nosotros</a>
+          <a href="contact.html">Contacto</a>
+          <a href="faq.html">Preguntas frecuentes</a>
         </nav>
         <div class="nav-right">
           <div class="row gap">
-            <a class="admin-link" href="admin/login.html" title="Admin"
-              >Admin</a
-            >
-            <button
-              id="themeToggle"
-              class="btn ghost"
-              aria-label="Toggle theme"
-            >
-              🌓
+            <button id="themeToggle" class="btn ghost" aria-label="Cambiar tema">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.354 15.354A9 9 0 0 1 8.646 3.646 9.003 9.003 0 1 0 20.354 15.354Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
             </button>
-            <a class="btn" href="checkout.html">Cart</a>
+            <a class="btn" href="checkout.html">Carrito</a>
           </div>
-          <button
-            id="navToggle"
-            class="btn ghost hamburger"
-            aria-label="Toggle menu"
-          >
-            ☰
-          </button>
+          <button id="navToggle" class="btn ghost hamburger" aria-label="Abrir menú">☰</button>
         </div>
       </div>
     </header>
 
     <main class="container">
       <div id="restaurantDetail" class="restaurant-detail">
-        <div class="cover-skeleton"></div>
+        <div class="cover-skeleton">Cargando...</div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container row between align-center">
-        <p>© 2025 TableTime. All rights reserved.</p>
+        <p>© 2025 Yisuss Pizza. Todos los derechos reservados.</p>
         <div class="row gap sm">
-          <a href="terms.html">Terms</a>
-          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Términos</a>
+          <a href="privacy.html">Privacidad</a>
         </div>
       </div>
     </footer>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin Dashboard – TableTime</title>
+  <title>Admin Panel – Yisuss Pizza</title>
   <link rel="stylesheet" href="../assets/style.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -12,39 +12,50 @@
   <header class="topbar admin">
     <div class="container row between align-center">
       <a class="brand" href="dashboard.html">
-        <span>TableTime Admin</span>
+        <span>Yisuss Pizza Admin</span>
       </a>
-      <button id="navToggle" class="btn ghost hamburger" aria-label="Toggle menu">☰</button>
+      <button id="navToggle" class="btn ghost hamburger" aria-label="Abrir menú">☰</button>
         <nav class="nav">
-        <a href="dashboard.html" class="active">Dashboard</a>
-        <a href="orders.html" class="">Orders</a>
-        <a href="menu.html" class="">Menu</a>
-        <a href="settings.html" class="">Settings</a>
+        <a href="dashboard.html" class="active">Panel</a>
+        <a href="orders.html" class="">Pedidos</a>
+        <a href="menu.html" class="">Menú</a>
+        <a href="settings.html" class="">Configuración</a>
       </nav>
       <div class="row gap">
-        <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
-        <button id="adminLogout" class="btn danger">Logout</button>
+        <button id="themeToggle" class="btn ghost" aria-label="Cambiar tema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path
+              d="M20.354 15.354A9 9 0 0 1 8.646 3.646 9.003 9.003 0 1 0 20.354 15.354Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+        </button>
+        <button id="adminLogout" class="btn danger">Cerrar sesión</button>
       </div>
     </div>
   </header>
 
   <main class="container">
     <section class="grid three">
-      <div class="stat card"><div class="stat-num" id="statOrders">0</div><div class="stat-label">Total orders</div></div>
-      <div class="stat card"><div class="stat-num" id="statPending">0</div><div class="stat-label">Pending</div></div>
-      <div class="stat card"><div class="stat-num" id="statDelivered">0</div><div class="stat-label">Delivered</div></div>
+      <div class="stat card"><div class="stat-num" id="statOrders">0</div><div class="stat-label">Pedidos totales</div></div>
+      <div class="stat card"><div class="stat-num" id="statPending">0</div><div class="stat-label">Pendientes</div></div>
+      <div class="stat card"><div class="stat-num" id="statDelivered">0</div><div class="stat-label">Entregados</div></div>
     </section>
     <section>
-      <h2>Recent Orders</h2>
+      <h2>Pedidos recientes</h2>
       <div id="recentOrders" class="table"></div>
     </section>
   </main>
   
   <footer class="footer admin">
     <div class="container row between align-center">
-      <p>TableTime Admin</p>
+      <p>Yisuss Pizza Admin</p>
       <div class="row gap sm">
-        <a href="../index.html">← Back to site</a>
+        <a href="../index.html">← Volver al sitio</a>
       </div>
     </div>
   </footer>

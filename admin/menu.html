@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin Menu – TableTime</title>
+  <title>Admin Menú – Yisuss Pizza</title>
   <link rel="stylesheet" href="../assets/style.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -12,43 +12,43 @@
   <header class="topbar admin">
     <div class="container row between align-center">
       <a class="brand" href="dashboard.html">
-        <span>TableTime Admin</span>
+        <span>Yisuss Pizza Admin</span>
       </a>
-      <button id="navToggle" class="btn ghost hamburger" aria-label="Toggle menu">☰</button>
+      <button id="navToggle" class="btn ghost hamburger" aria-label="Abrir menú">☰</button>
         <nav class="nav">
-        <a href="dashboard.html" class="">Dashboard</a>
-        <a href="orders.html" class="">Orders</a>
-        <a href="menu.html" class="active">Menu</a>
-        <a href="settings.html" class="">Settings</a>
+        <a href="dashboard.html" class="">Panel</a>
+        <a href="orders.html" class="">Pedidos</a>
+        <a href="menu.html" class="active">Menú</a>
+        <a href="settings.html" class="">Configuración</a>
       </nav>
       <div class="row gap">
-        <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌓</button>
-        <button id="adminLogout" class="btn danger">Logout</button>
+        <button id="themeToggle" class="btn ghost" aria-label="Cambiar tema">🌓</button>
+        <button id="adminLogout" class="btn danger">Cerrar sesión</button>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <h2>Menu Management</h2>
+    <h2>Gestión de menú</h2>
     <div class="card stack">
-      <label>Restaurant
+      <label>Restaurante
         <select id="adminRestaurantSelect"></select>
       </label>
       <div id="adminMenuList" class="table"></div>
       <form id="addMenuItem" class="row wrap gap">
-        <input type="text" name="name" placeholder="Item name" required />
-        <input type="number" name="price" placeholder="Price" min="0" step="0.01" required />
-        <button class="btn" type="submit">Add Item</button>
+        <input type="text" name="name" placeholder="Nombre del producto" required />
+        <input type="number" name="price" placeholder="Precio" min="0" step="0.01" required />
+        <button class="btn" type="submit">Agregar producto</button>
       </form>
-      <button id="saveMenu" class="btn primary">Save Changes</button>
+      <button id="saveMenu" class="btn primary">Guardar cambios</button>
     </div>
   </main>
   
   <footer class="footer admin">
     <div class="container row between align-center">
-      <p>TableTime Admin</p>
+      <p>Yisuss Pizza Admin</p>
       <div class="row gap sm">
-        <a href="../index.html">← Back to site</a>
+        <a href="../index.html">← Volver al sitio</a>
       </div>
     </div>
   </footer>
