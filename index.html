@@ -76,11 +76,19 @@
         </p>
         <div class="searchbar row wrap gap">
           <input type="text" id="q" placeholder="Buscar..." />
+          <!-- Filtra por categoría (Pizzas, Pastas, Bebidas, Postres...).
+               script.js llena las opciones con las categorías reales que
+               tenga cada negocio. -->
           <select id="cuisineFilter">
-            <option value="">Todo</option>
+            <option value="">Todas las categorías</option>
           </select>
+          <!-- Filtra por sabor puntual (el nombre del plato, ej. "Pizza
+               Pepperoni"). Antes este selector filtraba por ciudad, un
+               dato que no aplica acá (todos los platos quedaban con
+               city: "N/A") — script.js ahora lo llena con los nombres de
+               los platos en vez de ciudades. -->
           <select id="cityFilter">
-            <option value="">Todas las ciudades</option>
+            <option value="">Todos los sabores</option>
           </select>
           <button id="searchBtn" class="btn">Buscar</button>
         </div>

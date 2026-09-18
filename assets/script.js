@@ -37,6 +37,38 @@
   const db = firebase.firestore();
   console.log("✅ Firebase conectado");
 
+  // ============================================================
+  // EMPRESA DE ESTE SITIO
+  // ------------------------------------------------------------
+  // Como esta página web es pública (no hay login), no hay una
+  // "sesión" de la que tomar el empresaId como en el panel admin
+  // (dashboard.html, pedidos.html, etc). Por eso el empresaId de
+  // ESTE negocio va fijo acá — cada negocio que use este mismo
+  // sistema para su propia página web tendrá su propia copia de
+  // este archivo con SU empresaId puesto abajo. Es lo que hace que
+  // el sitio sea "de" una empresa puntual en el sistema multiempresa.
+  //
+  // ⚠️ IMPORTANTE: reemplazá "PONE_AQUI_TU_EMPRESA_ID" por el
+  // empresaId real de tu negocio, y "PONE_AQUI_TU_SUCURSAL_ID" por
+  // el ID de la sucursal cuyo menú querés mostrar en este sitio (si
+  // el negocio tiene una sola sucursal, igual hay que ponerlo — el
+  // menú se carga por sucursal, no por empresa entera). Para
+  // encontrar ambos:
+  //   1. Entrá al panel admin (dashboard.html) con tu usuario.
+  //   2. Abrí la consola del navegador (F12) y escribí:
+  //        JSON.parse(sessionStorage.getItem('user')).empresaId
+  //      y después, en otra línea:
+  //        sessionStorage.getItem('sucursalId')
+  //   3. Copiá cada valor tal cual (sin comillas de más) acá abajo.
+  // Sin esto: (a) la consulta a "productos" queda sin filtrar y las
+  // reglas de seguridad de Firestore la rechazan por completo — es
+  // la causa exacta de "Error al cargar el menú."; y (b) los pedidos
+  // hechos desde este sitio no tendrían empresaId, así que no
+  // aparecerían en el panel de Pedidos del negocio.
+  // ============================================================
+  const EMPRESA_ID = "pizzeria-yissus";
+  const SUCURSAL_ID = "sapucai";
+
   const nombreCategoria = {
     "pizza": "Pizzas",
     "noodles": "Pastas",
@@ -53,7 +85,20 @@
   // ============================================================
   function cargarRestaurantesDesdeFirebase() {
     return new Promise((resolve, reject) => {
-      db.collection('productos').onSnapshot((snapshot) => {
+      if (!EMPRESA_ID || EMPRESA_ID === "PONE_AQUI_TU_EMPRESA_ID") {
+        console.error("❌ Falta configurar EMPRESA_ID en assets/script.js — ver el comentario arriba de esta constante.");
+        reject(new Error("EMPRESA_ID sin configurar"));
+        return;
+      }
+      if (!SUCURSAL_ID || SUCURSAL_ID === "PONE_AQUI_TU_SUCURSAL_ID") {
+        console.error("❌ Falta configurar SUCURSAL_ID en assets/script.js — ver el comentario arriba de esta constante.");
+        reject(new Error("SUCURSAL_ID sin configurar"));
+        return;
+      }
+      db.collection('productos')
+        .where('empresaId', '==', EMPRESA_ID)
+        .where('sucursalId', '==', SUCURSAL_ID)
+        .onSnapshot((snapshot) => {
         const productos = [];
         snapshot.forEach(doc => {
           const data = doc.data();
@@ -192,26 +237,29 @@
   function pageIndex() {
     cargarRestaurantesDesdeFirebase().then((list) => {
       const cuisines = [...new Set(list.map((r) => r.cuisine))].sort();
-      const cities = [...new Set(list.map((r) => r.city))].sort();
-      $("#cuisineFilter").empty().append('<option value="">Todo</option>');
+      // ANTES: este segundo selector filtraba por "ciudad", un dato que
+      // no existe para platos de un menú (siempre quedaba en "N/A").
+      // AHORA filtra por sabor puntual — el nombre de cada plato.
+      const flavors = [...new Set(list.map((r) => r.name))].sort();
+      $("#cuisineFilter").empty().append('<option value="">Todas las categorías</option>');
       cuisines.forEach((c) =>
         $("#cuisineFilter").append(`<option>${c}</option>`)
       );
-      $("#cityFilter").empty().append('<option value="">Todas las ciudades</option>');
-      cities.forEach((c) => $("#cityFilter").append(`<option>${c}</option>`));
+      $("#cityFilter").empty().append('<option value="">Todos los sabores</option>');
+      flavors.forEach((f) => $("#cityFilter").append(`<option>${f}</option>`));
 
       function render() {
         const q = ($("#q").val() || "").toLowerCase().trim();
         const c = $("#cuisineFilter").val() || "";
-        const city = $("#cityFilter").val() || "";
+        const flavor = $("#cityFilter").val() || "";
         const filtered = list.filter((r) => {
           const matchQ =
             !q ||
             r.name.toLowerCase().includes(q) ||
             r.cuisine.toLowerCase().includes(q);
           const matchC = !c || r.cuisine === c;
-          const matchCity = !city || r.city === city;
-          return matchQ && matchC && matchCity;
+          const matchFlavor = !flavor || r.name === flavor;
+          return matchQ && matchC && matchFlavor;
         });
         const $res = $("#results").empty();
         if (!filtered.length) {
@@ -415,6 +463,12 @@
       // CONSTRUIR EL PEDIDO
       // ============================================================
       const order = {
+        // ⚠️ Antes esto no llevaba empresaId. Sin él, el pedido ni
+        // aparece en el panel de "Pedidos" del negocio (que filtra por
+        // empresaId) ni probablemente pasa las reglas de seguridad de
+        // Firestore para poder guardarse.
+        empresaId: EMPRESA_ID,
+        sucursalId: SUCURSAL_ID,
         created_at: new Date().toISOString(),
         restaurantId: STATE.cart.restaurantId,
         items: STATE.cart.items.map(i => ({
