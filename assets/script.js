@@ -111,7 +111,7 @@
             rating: 4.0,
             price: "Gs",
             image: data.image || "https://via.placeholder.com/600x400?text=Sin+imagen",
-            description: data.note || "Delicioso plato preparado con los mejores ingredientes.",
+            description: data.note || "",
             menu: [
               { id: "m1-" + doc.id, name: data.name + " (Individual)", price: Math.round((data.price || 0) * 7300) },
               { id: "m2-" + doc.id, name: data.name + " (Familiar)", price: Math.round((data.price || 0) * 7300 * 1.8) }
@@ -121,7 +121,7 @@
         STATE.restaurants = productos;
         resolve(productos);
       }, (error) => {
-        console.error("❌ Error al cargar desde Firebase:", error);
+        console.error("Error al cargar desde Firebase:", error);
         reject(error);
       });
     });
